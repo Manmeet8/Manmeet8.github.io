@@ -1,0 +1,38 @@
+/* Font Face */
+@font-face {
+    font-family: 'CustomIcons';
+    src: url('../fonts/custom-icons/custom-icons.eot');
+    src: url('../fonts/custom-icons/custom-icons.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/custom-icons/custom-icons.woff2') format('woff2'),
+         url('../fonts/custom-icons/custom-icons.woff') format('woff'),
+         url('../fonts/custom-icons/custom-icons.ttf') format('truetype'),
+         url('../fonts/custom-icons/custom-icons.svg#CustomIcons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Icon Class */
+.ci {
+    font-family: 'CustomIcons';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Icon Styles */
+.ci:before {
+    content: attr(data-icon);
+    display: inline-block;
+    speak: none;
+}
+
+/* Example Icon Usage */
+.custom-icon {
+    font-size: 24px;
+    color: #FF5722; /* Orange color */
+    margin-right: 8px;
+}
